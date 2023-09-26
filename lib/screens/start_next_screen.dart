@@ -11,22 +11,24 @@ class StartNextPage extends StatefulWidget {
 class _StartNextPageState extends State<StartNextPage> {
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.black,
-            image: DecorationImage(
-                fit: BoxFit.cover,
-                image: const AssetImage(
-                  'assets/images/start_next_bg.png',
-                ),
-                colorFilter: ColorFilter.mode(
-                    Colors.black.withOpacity(0.7), BlendMode.dstATop)),
+    return Scaffold(
+      body: Stack(
+        children: [
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.black,
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: const AssetImage(
+                    'assets/images/start_next_bg.png',
+                  ),
+                  colorFilter: ColorFilter.mode(
+                      Colors.black.withOpacity(0.7), BlendMode.dstATop)),
+            ),
           ),
-        ),
-        const StartNextContainer(),
-      ],
+          const StartNextContainer(),
+        ],
+      ),
     );
   }
 }
