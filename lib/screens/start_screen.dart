@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/route_manager.dart';
 import 'package:nnike/containers/start_container.dart';
 
 class StartPage extends StatefulWidget {

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nnike/screens/start_next_screen.dart';
+import 'package:get/route_manager.dart';
 
 class StartContainer extends StatefulWidget {
   const StartContainer({super.key});
@@ -84,16 +86,18 @@ class _StartContainerState extends State<StartContainer> {
         SizedBox(
           height: screenheightFixed * 428,
         ),
-        Container(
+        SizedBox(
             width: screenwidthFixed * 162,
             height: screenheightFixed * 49,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(() => const StartNextPage());
+              },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
-                      side: BorderSide(color: Colors.black, width: 1))),
+                      side: const BorderSide(color: Colors.black, width: 1))),
               child: const Text(
                 'Get Started',
                 style: TextStyle(color: Colors.black, fontSize: 16),
