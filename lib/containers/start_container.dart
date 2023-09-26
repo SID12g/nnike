@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nnike/containers/choose_sex_container.dart';
+import 'package:nnike/screens/choose_sex_screen.dart';
 import 'package:nnike/screens/start_next_screen.dart';
 import 'package:get/route_manager.dart';
 
@@ -91,7 +93,7 @@ class _StartContainerState extends State<StartContainer> {
             height: screenheightFixed * 49,
             child: ElevatedButton(
               onPressed: () {
-                Get.to(() => const StartNextPage());
+                Get.to(() => const ChooseSexPage());
               },
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.white,
