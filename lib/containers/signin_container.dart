@@ -98,7 +98,7 @@ class _SigninContainerState extends State<SigninContainer> {
                       )),
                   child: const Text(
                     'Join Us',
-                    style: TextStyle(color: Colors.black, fontSize: 20),
+                    style: TextStyle(color: Colors.black, fontSize: 16),
                   ),
                 ),
               ),
@@ -119,7 +119,7 @@ class _SigninContainerState extends State<SigninContainer> {
                           side: BorderSide(color: Colors.white, width: 1))),
                   child: const Text(
                     'Sign In',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
+                    style: TextStyle(color: Colors.white, fontSize: 16),
                   ),
                 ),
               ),
