@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:nnike/containers/signin_container.dart';
+import 'package:get/route_manager.dart';
 
-class SignInPage extends StatefulWidget {
-  const SignInPage({super.key});
+class StartPage extends StatefulWidget {
+  const StartPage({super.key});
 
   @override
-  State<SignInPage> createState() => _SignInPageState();
+  State<StartPage> createState() => _StartPageState();
 }
 
-class _SignInPageState extends State<SignInPage> {
+class _StartPageState extends State<StartPage> {
   @override
   Widget build(BuildContext context) {
+    double screenwidthFixed = MediaQuery.of(context).size.width / 375;
+    double screenheightFixed = MediaQuery.of(context).size.height / 812;
     return Stack(
       children: [
         Container(
@@ -19,13 +21,12 @@ class _SignInPageState extends State<SignInPage> {
             image: DecorationImage(
                 fit: BoxFit.cover,
                 image: const AssetImage(
-                  'assets/images/nike_signin.jpeg',
+                  'assets/images/start_bg.png',
                 ),
                 colorFilter: ColorFilter.mode(
                     Colors.black.withOpacity(0.7), BlendMode.dstATop)),
           ),
         ),
-        const SigninContainer(),
       ],
     );
   }
