@@ -110,7 +110,7 @@ class _ChooseSexContainerState extends State<ChooseSexContainer> {
               SizedBox(
                   width: screenwidthFixed * 29,
                   height: screenheightFixed * 29,
-                  child: const SelecSexContainer())
+                  child: const SelecSexContainer()),
             ],
           ),
         ),
